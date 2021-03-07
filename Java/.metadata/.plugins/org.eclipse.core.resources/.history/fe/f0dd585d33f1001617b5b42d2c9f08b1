@@ -1,0 +1,17 @@
+package eserciziario;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+public class PersonArchive {
+	
+	private Map<String,Person> map=new HashMap<String,Person>();
+	
+	public Impiegato factoryImpegato(String nome,String cognome, Date dataNascita,String codiceFiscale,String matricola,String mansione,int livello){
+		
+		return new Impiegato(nome,cognome,dataNascita,codiceFiscale,matricola,mansione,livello);
+		
+	}
+
+}

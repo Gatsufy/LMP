@@ -1,0 +1,17 @@
+package eserciziario;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Map<String,Person> map=new HashMap<String,Person>();
+		
+		PersonArchive pa=new PersonArchive();
+
+	}
+
+}

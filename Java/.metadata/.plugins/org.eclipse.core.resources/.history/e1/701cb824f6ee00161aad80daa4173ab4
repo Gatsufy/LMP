@@ -1,0 +1,47 @@
+package eserciziario;
+
+public class PrimoEmicorso {
+	
+	private ProvaScrittaModuloUno provaScritta;
+	
+	private ProvaOraleModuloUno provaOrale;
+	
+	private int coefficienteScritto;
+	
+	private int coefficienteOrale;
+	
+	
+
+	public PrimoEmicorso(ProvaScrittaModuloUno provaScritta, ProvaOraleModuloUno provaOrale) {
+		super();
+		this.provaScritta = provaScritta;
+		this.provaOrale = provaOrale;
+	}
+
+	public ProvaScrittaModuloUno getProvaScritta() {
+		return provaScritta;
+	}
+
+	public ProvaOraleModuloUno getProvaOrale() {
+		return provaOrale;
+	}
+	
+	public int getCoefficienteScritto(){
+		return coefficienteScritto;
+		}
+	
+	public int getCoefficienteOrale(){
+		return coefficienteOrale;
+	}
+	
+	public int mediaPesata(){
+		return (((provaScritta.getPunteggio()*coefficienteScritto)+(provaOrale.getPunteggio()*coefficienteOrale))/(coefficienteScritto+coefficienteOrale));
+	}
+	
+	
+	
+	
+	
+	
+
+}

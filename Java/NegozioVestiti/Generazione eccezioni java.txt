@@ -1,0 +1,9 @@
+		try {
+			if (listaAcquisto.size() == 0){
+				throw new Exception("Questo cliente non ha comprato nulla in questo negozio");
+			}
+		}
+		catch(Exception e){
+			System.out.println("La preghiamo di inserire solo clienti che abbiano acquistato almeno un prodotto");
+			System.exit(0);
+		}

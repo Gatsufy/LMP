@@ -1,0 +1,18 @@
+package eserciziario;
+
+public class ProvaScitta {
+	
+	private int punteggio;
+
+	public ProvaScitta(int punteggio) {
+		super();
+		this.punteggio = punteggio;
+	}
+
+	public int getPunteggio() {
+		return punteggio;
+	}
+	
+	
+
+}

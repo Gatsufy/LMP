@@ -1,0 +1,25 @@
+package eserciziario;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+public class PersonArchive {
+	
+	private Map<String,Person> map=new HashMap<String,Person>();
+	
+	public void factoryImpegato(String nome,String cognome, Date dataNascita,String codiceFiscale,String matricola,String mansione,int livello){
+		
+		map.put(codiceFiscale, new Impiegato(nome,cognome,dataNascita,codiceFiscale,matricola,mansione,livello));
+		//return new Impiegato(nome,cognome,dataNascita,codiceFiscale,matricola,mansione,livello);
+		
+	}
+	
+	public void factoryLiberoProfessionista(String nome,String cognome, Date dataNascita, String codiceFiscale,String partitaIva,String professione){
+		
+		map.put(codiceFiscale,new LiberoProfessionista(nome,cognome,dataNascita,codiceFiscale,partitaIva,professione));
+	}
+	
+	
+
+}

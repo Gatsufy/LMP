@@ -1,0 +1,5 @@
+filetype:ristorante
+partita_IVA:CDE45
+sede:Roma
+categoria:pizzeria
+in_attivita_dal:1990

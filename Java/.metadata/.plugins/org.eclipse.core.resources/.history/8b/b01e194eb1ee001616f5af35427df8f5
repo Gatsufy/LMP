@@ -1,0 +1,12 @@
+package eserciziario;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class PersonArchive {
+	
+	private Map<String,Persona> map=new HashMap<String,Persona>();
+	
+	
+
+}

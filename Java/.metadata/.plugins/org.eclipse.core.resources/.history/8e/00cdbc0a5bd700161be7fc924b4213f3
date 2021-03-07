@@ -1,0 +1,33 @@
+package lmp.uniroma2;
+
+import java.util.Date;
+
+public class Esame {
+	
+	private String nome;
+
+	private Date dataSuperamento;
+	
+	private int votoEsame;  //espresso in 30esimi
+
+	public Esame(String nome, Date dataSuperamento, int votoEsame) {
+		super();
+		this.nome = nome;
+		this.dataSuperamento = dataSuperamento;
+		this.votoEsame = votoEsame;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public Date getDataSuperamento() {
+		return dataSuperamento;
+	}
+
+	public int getVotoEsame() {
+		return votoEsame;
+	}
+	
+	
+}

@@ -1,0 +1,15 @@
+package eserciziario;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		ProvaScritta provaUno=new ProvaScritta(10,5,7);
+		
+		ProvaScritta provaDue=new ProvaScritta(10,2,5);
+		
+		Studente s1=new Studente("Marco","Melchiorri","0219773", provaUno);
+
+	}
+
+}

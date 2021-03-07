@@ -1,0 +1,25 @@
+package eserciziario;
+
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Map<String,Person> map=new HashMap<String,Person>();
+		
+		PersonArchive pa=new PersonArchive();
+		
+		Calendar c1=Calendar.getInstance();
+		
+		c1.set(1990, 6,25 );
+		
+		
+		map.put("MLCMRC90L25H501M", pa.factoryImpegato("Marco", "Melchiorri", c1.getTime(), "MLCMRC90L25H501M", "0219773", "Manutentore", 4);
+
+	}
+
+}

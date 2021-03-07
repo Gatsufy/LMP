@@ -1,0 +1,64 @@
+package eserciziario;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Map;
+import java.util.Scanner;
+
+public class EsameCompleto {
+	
+	private Map<String,EsameStudente> mappaEsameStudenti;
+	
+	private Date dataEsame;
+	
+	private ArrayList<Studente> listaStudenti;
+	
+	private PrimoEmicorso primoEmicorso;
+	
+	private SecondoEmicorso secondoEmicorso;
+
+	public EsameCompleto(Map<String, EsameStudente> mappaEsameStudenti, Date dataEsame,
+			ArrayList<Studente> listaStudenti, PrimoEmicorso primoEmicorso, SecondoEmicorso secondoEmicorso) {
+		super();
+		this.mappaEsameStudenti = mappaEsameStudenti;
+		this.dataEsame = dataEsame;
+		this.listaStudenti = listaStudenti;
+		this.primoEmicorso = primoEmicorso;
+		this.secondoEmicorso = secondoEmicorso;
+	}
+
+	public Map<String, EsameStudente> getMappaEsameStudenti() {
+		return mappaEsameStudenti;
+	}
+
+	public Date getDataEsame() {
+		return dataEsame;
+	}
+
+	public ArrayList<Studente> getListaStudenti() {
+		return listaStudenti;
+	}
+
+	public PrimoEmicorso getPrimoEmicorso() {
+		return primoEmicorso;
+	}
+
+	public SecondoEmicorso getSecondoEmicorso() {
+		return secondoEmicorso;
+	}
+	
+	public int getNumeroStudenti(){
+		return listaStudenti.size();
+	}
+	
+	public int numeroPromossi(){
+		int numeroPromossi=0;
+		Scanner tastiera= new Scanner(System.in);
+		for(Studente s: listaStudenti){
+			if(mappaEsameStudenti.get(getPrimoEmicorso()).votoFinale(bonus))
+		}
+		
+	}
+	
+
+}

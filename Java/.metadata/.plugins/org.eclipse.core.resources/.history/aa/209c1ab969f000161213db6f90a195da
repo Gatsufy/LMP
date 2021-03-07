@@ -1,0 +1,65 @@
+package eserciziario;
+
+import java.util.ArrayList;
+
+public class Classe {
+	
+	private String nome;
+	
+	private int annoNascita;
+	
+	private int corso;
+	
+	private char c;
+	
+	private ArrayList<Studente> listaStudenti;
+
+	public Classe(String nome, int annoNascita, int corso, char c, ArrayList<Studente> listaStudenti) {
+		super();
+		this.nome = nome;
+		this.annoNascita = annoNascita;
+		this.corso = corso;
+		this.c = c;
+		this.listaStudenti=listaStudenti;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public int getAnnoNascita() {
+		return annoNascita;
+	}
+
+	public int getCorso() {
+		return corso;
+	}
+
+	public char getC() {
+		return c;
+	}
+
+	public ArrayList<Studente> getListaStudenti() {
+		return listaStudenti;
+	}
+	
+	public int numeroStudenti(){
+		return listaStudenti.size();
+	}
+	
+	@SuppressWarnings("deprecation")
+	public void studentiRipetenti(){
+		
+		for(Studente s: listaStudenti){
+			if(annoNascita>s.getDataNascita().getYear()+1900){
+				System.out.println("Lo studente è ripetente");
+				System.out.println("Sta ripetendo questo corso da" + (annoNascita-(s.getDataNascita().getYear()+1900)) + "anni");
+			}
+		}
+		
+	}
+
+	
+	
+
+}

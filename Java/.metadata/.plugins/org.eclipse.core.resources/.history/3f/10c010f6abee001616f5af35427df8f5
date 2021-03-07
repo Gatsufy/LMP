@@ -1,0 +1,43 @@
+package eserciziario;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+public class EsameTotale {
+	
+	private PrimoEmicorso primoEmicorso;
+	
+	private SecondoEmicorso secondoEmicorso;
+	
+	private Date date;
+	
+	private ArrayList<Studente> listaStudenti;
+
+	public EsameTotale(PrimoEmicorso primoEmicorso, SecondoEmicorso secondoEmicorso, Date date,
+			ArrayList<Studente> listaStudenti) {
+		super();
+		this.primoEmicorso = primoEmicorso;
+		this.secondoEmicorso = secondoEmicorso;
+		this.date = date;
+		this.listaStudenti = listaStudenti;
+	}
+
+	public PrimoEmicorso getPrimoEmicorso() {
+		return primoEmicorso;
+	}
+
+	public SecondoEmicorso getSecondoEmicorso() {
+		return secondoEmicorso;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public ArrayList<Studente> getListaStudenti() {
+		return listaStudenti;
+	}
+	
+	
+
+}

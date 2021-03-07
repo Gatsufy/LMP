@@ -1,0 +1,33 @@
+package eserciziario;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		Calendar c1=Calendar.getInstance();
+		
+		c1.set(1995, 6, 25);
+		
+		Studente st1=new Studente("Marco","Melchiorri",c1.getTime(),"Roma", 1996);
+		
+		c1.set(1995, 6, 25);
+		
+		Studente st2=new Studente("Seia", "Bucci", c1.getTime(), "Roma", 2001);
+		
+		ArrayList<Studente> listaStudenti=new ArrayList<>();
+		
+		listaStudenti.add(st1);
+		
+		listaStudenti.add(st2);
+		
+		Classe cl1=new Classe("Benedetto da Norcia",1995,5,'c',listaStudenti);
+		
+		System.out.println(cl1.getListaStudenti().size());
+		System.out.println(cl1.studentiRipetenti());
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package eserciziario;
+
+import java.util.Date;
+
+public class Esame {
+	
+	private String nomeCorso;
+	
+	private Date dataSuperamento;
+	
+	private int voto;
+	
+	private boolean lode;
+	
+	
+	
+	
+
+}

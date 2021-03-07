@@ -1,0 +1,11 @@
+package esame_lmp;
+
+import java.util.ArrayList;
+
+public class Concessionario {
+	
+	private ArrayList<Automobile> listaAutomobili;
+	
+	
+
+}

@@ -1,0 +1,21 @@
+package eserciziario;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Studente s1=new Studente("Marco", "Melchiorri", "0219773");
+		
+		Calendar c1=Calendar.getInstance();
+		
+		Esame e1=new Esame();
+		
+		ArrayList<Esame> listaEsami=new ArrayList<>();
+
+	}
+
+}

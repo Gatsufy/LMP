@@ -1,0 +1,32 @@
+package eserciziario;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Map;
+
+public class EsameCompleto {
+	
+	private Map<String,EsameStudente> mappaEsameStudenti;
+	
+	private Date dataEsame;
+	
+	private ArrayList<Studente> listaStudenti;
+	
+	private PrimoEmicorso primoEmicorso;
+	
+	private SecondoEmicorso secondoEmicorso;
+
+	public EsameCompleto(Map<String, EsameStudente> mappaEsameStudenti, Date dataEsame,
+			ArrayList<Studente> listaStudenti, PrimoEmicorso primoEmicorso, SecondoEmicorso secondoEmicorso) {
+		super();
+		this.mappaEsameStudenti = mappaEsameStudenti;
+		this.dataEsame = dataEsame;
+		this.listaStudenti = listaStudenti;
+		this.primoEmicorso = primoEmicorso;
+		this.secondoEmicorso = secondoEmicorso;
+	}
+	
+	
+	
+
+}

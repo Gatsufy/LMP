@@ -1,0 +1,40 @@
+package eserciziario;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Studente s1=new Studente("Marco", "Melchiorri", "0219773");
+		
+		Calendar c1=Calendar.getInstance();
+		
+		c1.set(Calendar.YEAR, 2017);
+		c1.set(Calendar.MONTH,1);
+		c1.set(Calendar.DAY_OF_MONTH, 14);
+		
+		Esame e1=new Esame("Lmp", c1.getTime(),17,false);
+		
+		Esame e2=new Esame("Analisi", c1.getTime(),24,false);
+
+		
+		ArrayList<Esame> listaEsami=new ArrayList<>();
+		
+		listaEsami.add(e1);
+		
+		listaEsami.add(e2);
+		
+		Registro registroEsami=new Registro(listaEsami,s1);
+		
+		System.out.println(registroEsami.esamiPassati());
+		
+		System.out.println(registroEsami.mediaAritmetica());
+		
+		
+
+	}
+
+}

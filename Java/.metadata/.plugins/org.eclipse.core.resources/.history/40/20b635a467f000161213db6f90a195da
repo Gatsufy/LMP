@@ -1,0 +1,40 @@
+package eserciziario;
+
+public class Classe {
+	
+	private String nome;
+	
+	private int annoNascita;
+	
+	private int corso;
+	
+	private char c;
+
+	public Classe(String nome, int annoNascita, int corso, char c) {
+		super();
+		this.nome = nome;
+		this.annoNascita = annoNascita;
+		this.corso = corso;
+		this.c = c;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public int getAnnoNascita() {
+		return annoNascita;
+	}
+
+	public int getCorso() {
+		return corso;
+	}
+
+	public char getC() {
+		return c;
+	}
+
+	
+	
+
+}

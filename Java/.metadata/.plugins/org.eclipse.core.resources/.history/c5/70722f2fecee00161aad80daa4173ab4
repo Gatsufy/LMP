@@ -1,0 +1,20 @@
+package eserciziario;
+
+public class ProvaScritta {
+	
+	private int esercizioUno;
+	
+	private int esercizioDue;
+	
+	private int esercizioTre;
+
+	public ProvaScritta(int esercizioUno, int esercizioDue, int esercizioTre) {
+		super();
+		this.esercizioUno = esercizioUno;
+		this.esercizioDue = esercizioDue;
+		this.esercizioTre = esercizioTre;
+	}
+	
+	
+
+}

@@ -1,0 +1,13 @@
+package eserciziario;
+
+public class PrimoEmicorso {
+	
+	private ProvaScritta provaScritta;
+	
+	private ProvaOrale provaOrale;
+	
+	
+	
+	
+
+}

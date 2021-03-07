@@ -1,0 +1,25 @@
+package eserciziario;
+
+import java.util.Calendar;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		Calendar c1=Calendar.getInstance();
+		
+		c1.set(1990, 6, 25);
+		
+		Studente st1=new Studente("Marco","Melchiorri",c1.getTime(),"Roma", 1996);
+		
+		c1.set(1995, 6, 25);
+		
+		Studente st2=new Studente("Seia", "Bucci", c1.getTime(), "Roma", 2001);
+		
+		
+	
+		Scuola sc1=new Scuola("Benedetto Da Norcia", 1992,)
+
+	}
+
+}

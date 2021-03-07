@@ -1,0 +1,48 @@
+package eserciziario;
+
+import java.util.ArrayList;
+
+public class Registro {
+	
+	private ArrayList<Esame> registroEsami;
+	
+	private Studente studente;
+
+	public Registro(ArrayList<Esame> registroEsami,Studente studente) {
+		super();
+		this.registroEsami = registroEsami;
+		this.studente=studente;
+	}
+
+	public ArrayList<Esame> getRegistroEsami() {
+		return registroEsami;
+	}
+	
+	public Studente getStudente(){
+		return studente;
+	}
+	
+	public double mediaAritmetica(){
+		int contatore=0;
+		int totale=0;
+		for(Esame e: registroEsami){
+			totale=totale+e.getVoto();
+			contatore++;
+		}
+		return totale/contatore;
+	}
+	
+	public int esamiPassati(){
+		int contatore=0;
+		for(Esame e: registroEsami){
+			if(e.getVoto()>=18){
+				contatore++;
+			}
+			
+		}
+		return contatore;
+	}
+	
+	
+
+}

@@ -1,0 +1,21 @@
+package eserciziario;
+
+import java.util.Date;
+
+public class Disoccupato extends Persona{
+	
+	private Date iscrizioneRegistroDisoccupazione;
+
+	public Disoccupato(String nome, String cognome, Date date, String codiceFiscale,
+			Date iscrizioneRegistroDisoccupazione) {
+		super(nome, cognome, date, codiceFiscale);
+		this.iscrizioneRegistroDisoccupazione = iscrizioneRegistroDisoccupazione;
+	}
+
+	public Date getIscrizioneRegistroDisoccupazione() {
+		return iscrizioneRegistroDisoccupazione;
+	}
+	
+	
+
+}

@@ -1,0 +1,12 @@
+package lmp.uniroma2;
+
+import java.util.ArrayList;
+
+public class LibrettoEsami {
+	
+	private ArrayList<Esame> listaEsami;
+	
+	
+	
+
+}

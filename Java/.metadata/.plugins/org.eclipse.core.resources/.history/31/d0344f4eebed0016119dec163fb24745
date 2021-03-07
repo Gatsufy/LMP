@@ -1,0 +1,13 @@
+package eserciziario;
+
+public class Dvd {
+	
+	private int nome;
+	
+	private int annoPubblicazione;
+	
+	private int durata;
+	
+	private ArrayList<Prestito> listaPrestiti;
+
+}

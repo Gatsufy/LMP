@@ -1,0 +1,25 @@
+package eserciziario;
+
+public class PrimoEmicorso {
+	
+	private ProvaScrittaModuloUno provaScritta;
+	
+	private ProvaOraleModuloUno provaOrale;
+
+	public PrimoEmicorso(ProvaScrittaModuloUno provaScritta, ProvaOraleModuloUno provaOrale) {
+		super();
+		this.provaScritta = provaScritta;
+		this.provaOrale = provaOrale;
+	}
+
+	public ProvaScrittaModuloUno getProvaScritta() {
+		return provaScritta;
+	}
+
+	public ProvaOraleModuloUno getProvaOrale() {
+		return provaOrale;
+	}
+	
+	
+
+}

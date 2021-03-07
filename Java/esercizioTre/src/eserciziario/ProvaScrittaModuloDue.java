@@ -1,0 +1,27 @@
+package eserciziario;
+
+public class ProvaScrittaModuloDue {
+	
+	private int punteggioUno;
+	
+	private int punteggioDue;
+
+	public ProvaScrittaModuloDue(int punteggioUno, int punteggioDue) {
+		super();
+		this.punteggioUno = punteggioUno;
+		this.punteggioDue = punteggioDue;
+	}
+
+	public int getPunteggioUno() {
+		return punteggioUno;
+	}
+
+	public int getPunteggioDue() {
+		return punteggioDue;
+	}
+	
+	public int getMediaScritta(){
+		return punteggioUno+punteggioDue;
+	}
+
+}

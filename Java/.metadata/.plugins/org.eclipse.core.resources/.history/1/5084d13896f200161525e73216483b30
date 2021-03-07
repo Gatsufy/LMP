@@ -1,0 +1,65 @@
+package esame_lmp;
+
+public class Automobile {
+	private String marca;
+
+	private String nome;
+	
+	private int cilindrata;
+	
+	private double capacit‡Serbatoio;
+	
+	private double nmKmPercorsi;
+
+	public Automobile(String marca, String nome, int cilindrata, double capacit‡Serbatoio, double nmKmPercorsi) {
+		super();
+		this.marca = marca;
+		this.nome = nome;
+		this.cilindrata = cilindrata;
+		this.capacit‡Serbatoio = capacit‡Serbatoio;
+		this.nmKmPercorsi = nmKmPercorsi;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getCilindrata() {
+		return cilindrata;
+	}
+
+	public void setCilindrata(int cilindrata) {
+		this.cilindrata = cilindrata;
+	}
+
+	public double getCapacit‡Serbatoio() {
+		return capacit‡Serbatoio;
+	}
+
+	public void setCapacit‡Serbatoio(double capacit‡Serbatoio) {
+		this.capacit‡Serbatoio = capacit‡Serbatoio;
+	}
+
+	public double getNmKmPercorsi() {
+		return nmKmPercorsi;
+	}
+
+	public void setNmKmPercorsi(double nmKmPercorsi) {
+		this.nmKmPercorsi = nmKmPercorsi;
+	}
+	
+	
+
+}

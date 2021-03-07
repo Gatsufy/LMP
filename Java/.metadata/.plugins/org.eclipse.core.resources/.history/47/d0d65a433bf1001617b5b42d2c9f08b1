@@ -1,0 +1,46 @@
+package eserciziario;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class PersonArchive {
+	
+	private Map<String,Person> map=new HashMap<String,Person>();
+	
+
+	
+	public Person factoryImpegato(String nome,String cognome, Date dataNascita,String codiceFiscale,String matricola,String mansione,int livello){
+		
+		//map.put(codiceFiscale, new Impiegato(nome,cognome,dataNascita,codiceFiscale,matricola,mansione,livello));
+		return new Impiegato(nome,cognome,dataNascita,codiceFiscale,matricola,mansione,livello);
+		
+	}
+	
+	public Person factoryLiberoProfessionista(String nome,String cognome, Date dataNascita, String codiceFiscale,String partitaIva,String professione){
+		
+		//map.put(codiceFiscale,new LiberoProfessionista(nome,cognome,dataNascita,codiceFiscale,partitaIva,professione));
+		return new LiberoProfessionista(nome,cognome,dataNascita,codiceFiscale,partitaIva,professione);
+	}
+	
+	public Person factoryDisoccupato(String nome,String cognome,Date dataNascita,String codiceFiscale,Date iscrizioneRegistroDisoccupati){
+		
+		return new Disoccupato(nome,cognome,dataNascita,codiceFiscale,iscrizioneRegistroDisoccupati);
+		
+		//map.put(codiceFiscale, new Disoccupato(nome,cognome,dataNascita,codiceFiscale,iscrizioneRegistroDisoccupati));
+	}
+	
+	public void getDatiPersona(String codiceFiscale,Person p){
+		
+		Iterator it= map.entrySet().iterator();
+		
+		while(it.hasNext()){
+			if(map.get(key).)
+		}
+		
+	}
+	
+	
+
+}

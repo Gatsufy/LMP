@@ -1,0 +1,13 @@
+package eserciziario;
+
+import java.util.Date;
+
+public class Prestito {
+	
+	private Date dataInizio;
+	
+	private Date dataFine;
+	
+	private 
+
+}

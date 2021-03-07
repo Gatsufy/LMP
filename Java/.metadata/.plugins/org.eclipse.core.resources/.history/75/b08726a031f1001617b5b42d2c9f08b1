@@ -1,0 +1,11 @@
+package eserciziario;
+
+public abstract class Person {
+	
+	private String nome;
+	
+	private String cognome;
+	
+	private Date dataNascita;
+
+}

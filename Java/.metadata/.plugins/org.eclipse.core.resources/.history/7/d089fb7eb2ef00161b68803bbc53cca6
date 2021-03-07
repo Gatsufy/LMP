@@ -1,0 +1,22 @@
+package eserciziario;
+
+import java.util.Hashtable;
+
+public class AlberoGenealogico {
+	
+	private Hashtable<String,Persona> alberoGenealogico;
+
+	public AlberoGenealogico(Hashtable<String, Persona> alberoGenealogico) {
+		super();
+		this.alberoGenealogico = alberoGenealogico;
+	}
+
+	public Hashtable<String, Persona> getAlberoGenealogico() {
+		return alberoGenealogico;
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package eserciziario;
+
+public abstract class Persona {
+
+}

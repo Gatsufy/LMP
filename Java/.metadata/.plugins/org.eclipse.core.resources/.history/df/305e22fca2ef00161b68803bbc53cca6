@@ -1,0 +1,70 @@
+package eserciziario;
+
+import java.util.ArrayList;
+
+public class PrimoEmicorso {
+	
+	private ProvaScrittaModuloUno provaScritta;
+	
+	private ProvaOraleModuloUno provaOrale;
+	
+	private int coefficienteScritto;
+	
+	private int coefficienteOrale;
+	
+	private Studente studente;
+	
+	private ArrayList<String> argomentiScritto;
+	
+	private ArrayList<String> argomentiOrale;
+	
+	
+	
+	
+	
+	public PrimoEmicorso(ProvaScrittaModuloUno provaScritta, ProvaOraleModuloUno provaOrale,int coefficienteScritto, int coefficienteOrale,Studente studente,ArrayList<String> argomentiScritto,ArrayList<String> argomentiOrale){
+		super();
+		this.provaScritta = provaScritta;
+		this.provaOrale = provaOrale;
+		this.coefficienteScritto=coefficienteScritto;
+		this.coefficienteOrale=coefficienteOrale;
+		this.studente=studente;
+		this.argomentiScritto=argomentiScritto;
+		this.argomentiOrale=argomentiOrale;
+	}
+
+	public ProvaScrittaModuloUno getProvaScritta() {
+		return provaScritta;
+	}
+
+	public ProvaOraleModuloUno getProvaOrale() {
+		return provaOrale;
+	}
+	
+	public int getCoefficienteScritto(){
+		return coefficienteScritto;
+		}
+	
+	public int getCoefficienteOrale(){
+		return coefficienteOrale;
+	}
+	
+	
+	
+	public Studente getStudente() {
+		return studente;
+	}
+
+	public ArrayList<String> getArgomentiScritto() {
+		return argomentiScritto;
+	}
+
+	public ArrayList<String> getArgomentiOrale() {
+		return argomentiOrale;
+	}
+
+	public int mediaPesata(){
+		return (((provaScritta.getPunteggio()*coefficienteScritto)+(provaOrale.getPunteggio()*coefficienteOrale))/(coefficienteScritto+coefficienteOrale));
+	}
+
+}

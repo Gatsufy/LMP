@@ -1,0 +1,27 @@
+package eserciziario;
+
+import java.util.ArrayList;
+
+public class Registro {
+	
+	private ArrayList<Esame> registroEsami;
+	
+	private Studente studente;
+
+	public Registro(ArrayList<Esame> registroEsami,Studente studente) {
+		super();
+		this.registroEsami = registroEsami;
+		this.studente=studente;
+	}
+
+	public ArrayList<Esame> getRegistroEsami() {
+		return registroEsami;
+	}
+	
+	public Studente getStudente(){
+		return studente;
+	}
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package eserciziario;
+
+import java.util.Date;
+
+public class EsameTotale {
+	
+	private PrimoEmicorso primoEmicorso;
+	
+	private SecondoEmicorso secondoEmicorso;
+	
+	private Date date;
+	
+	private ArrayList<Studente> listaStudenti;
+
+}

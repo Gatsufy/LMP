@@ -1,0 +1,7 @@
+package esame_lmp;
+
+public class Concessionario {
+	
+	private ArrayList<Automobile> listaAutomobili;
+
+}

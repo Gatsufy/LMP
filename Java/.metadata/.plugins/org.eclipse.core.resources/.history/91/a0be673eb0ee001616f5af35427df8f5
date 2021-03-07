@@ -1,0 +1,13 @@
+package eserciziario;
+
+public class Impiegato extends Persona {
+	
+	private String matricola;
+	
+	private String mansione;
+	
+	private int livello;
+	
+	
+
+}

@@ -1,0 +1,47 @@
+package esame_lmp;
+
+import java.util.ArrayList;
+
+public class Concessionario {
+	
+	private ArrayList<Automobile> listaAutomobili;
+	
+	Magazzino magazzino;
+
+	public Concessionario(ArrayList<Automobile> listaAutomobili,Magazzino magazzino) {
+		super();
+		this.listaAutomobili = listaAutomobili;
+		this.magazzino=magazzino;
+	}
+
+	public ArrayList<Automobile> getListaAutomobili() {
+		return listaAutomobili;
+	}
+
+	public void setListaAutomobili(ArrayList<Automobile> listaAutomobili) {
+		this.listaAutomobili = listaAutomobili;
+	}
+	
+	
+	public Magazzino getMagazzino() {
+		return magazzino;
+	}
+
+	public void setMagazzino(Magazzino magazzino) {
+		this.magazzino = magazzino;
+	}
+
+	public void getStatoAutomobile(Automobile a){
+		for(Automobile a1: listaAutomobili){
+			if(listaAutomobili.contains(a)){
+				System.out.println("L'automobile non è stata venduta");
+				for(Automobile a2: magazzino.getListaAutomobiliMagazzino()){
+					if()
+				}
+			}
+		}
+	}
+	
+	
+
+}

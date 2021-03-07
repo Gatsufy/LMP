@@ -1,0 +1,5 @@
+filetype:negozio
+partita_IVA:ABC12
+sede:Roma
+merce_venduta:frutta
+in_attivita_dal:1950

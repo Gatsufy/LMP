@@ -1,0 +1,41 @@
+package eserciziario;
+
+import java.util.ArrayList;
+
+public class Esame {
+	
+	private ArrayList<Studente> listaStudenti;
+
+	public Esame(ArrayList<Studente> listaStudenti) {
+		super();
+		this.listaStudenti = listaStudenti;
+	}
+
+	public ArrayList<Studente> getListaStudenti() {
+		return listaStudenti;
+	}
+	
+	public int numeroPromossi(){
+		int contatore=0;
+		
+		for(Studente s: listaStudenti){
+			if(s.getProvaScritta().punteggioFinale()>=18){
+				contatore++;
+			}
+		}
+		return contatore;
+	}
+	
+	public double percentualeBocciati(){
+		int contatore=0;
+		for(Studente s: listaStudenti){
+			if(s.getProvaScritta().punteggioFinale()<18){
+				contatore++;
+				System.out.println(contatore);
+			}
+		}
+		System.out.println(contatore/listaStudenti.size());
+		return (contatore/listaStudenti.size())*100;
+	}
+
+}

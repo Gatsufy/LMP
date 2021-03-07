@@ -1,0 +1,17 @@
+package eserciziario;
+
+import java.util.Date;
+
+public class Persona {
+	
+	private String nome;
+	
+	private String cognome;
+	
+	private String luogoNascita;
+	
+	private Date dataNascita;
+	
+	
+
+}

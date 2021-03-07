@@ -1,0 +1,21 @@
+package eserciziario;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Map;
+
+public class EsameCompleto {
+	
+	private Map<String,EsameStudente> mappaEsameStudenti;
+	
+	private Date dataEsame;
+	
+	private ArrayList<Studente> listaStudenti;
+	
+	private PrimoEmicorso primoEmicorso;
+	
+	private SecondoEmicorso secondoEmicorso;
+	
+	
+
+}

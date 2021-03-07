@@ -1,0 +1,9 @@
+package marco.melchiorri;
+
+public class Runner {
+	
+	TestScritto scrittoUno=new TestScritto(8,10,4);
+	
+	Studente studenteUno=new Studente("Marco","Melchiorri","0214773",scrittoUno);
+
+}

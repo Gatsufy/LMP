@@ -1,0 +1,50 @@
+package eserciziario;
+
+public class EsameStudente {
+	
+	private PrimoEmicorso primoEmicorso;
+	
+	private SecondoEmicorso secondoEmicorso;
+		
+	private boolean esito;
+	
+	private Studente studente;
+
+	public EsameStudente(PrimoEmicorso primoEmicorso, SecondoEmicorso secondoEmicorso, boolean esito,
+			Studente studente) {
+		super();
+		this.primoEmicorso = primoEmicorso;
+		this.secondoEmicorso = secondoEmicorso;
+		this.esito = esito;
+		this.studente = studente;
+	}
+
+	public PrimoEmicorso getPrimoEmicorso() {
+		return primoEmicorso;
+	}
+
+	public SecondoEmicorso getSecondoEmicorso() {
+		return secondoEmicorso;
+	}
+
+	public boolean isEsito() {
+		return esito;
+	}
+
+	public Studente getStudente() {
+		return studente;
+	}
+	
+	public int votoFinale(int bonus){
+		int bonusEsame=bonus;
+		return ((primoEmicorso.mediaPesata()+secondoEmicorso.mediaPesataSecondoEmicorso())/2)+bonusEsame;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

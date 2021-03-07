@@ -1,0 +1,39 @@
+package eserciziario;
+
+import java.util.Date;
+
+public class Impiegato extends Person {
+	
+	private String matricola;
+	
+	private String mansione;
+	
+	private int livello;
+
+	public Impiegato(String nome, String cognome, Date dataNascita, String codiceFiscale, String matricola,
+			String mansione, int livello) {
+		super(nome, cognome, dataNascita, codiceFiscale);
+		this.matricola = matricola;
+		this.mansione = mansione;
+		this.livello = livello;
+	}
+
+	public String getMatricola() {
+		return matricola;
+	}
+
+	public String getMansione() {
+		return mansione;
+	}
+
+	public int getLivello() {
+		return livello;
+	}
+	
+	@Override
+	public String toString(){
+		
+		return this.getNome()+this.getCognome();
+	
+	}
+}

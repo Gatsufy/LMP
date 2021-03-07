@@ -1,0 +1,44 @@
+package eserciziario;
+
+import java.util.ArrayList;
+
+public class PrimoEmicorso {
+	
+	private ProvaScritta provaScritta;
+	
+	private ProvaOrale provaOrale;
+	
+	private int punteggio;
+	
+	private ArrayList<String> domandeChieste;
+
+	public PrimoEmicorso(ProvaScritta provaScritta, ProvaOrale provaOrale, int punteggio,
+			ArrayList<String> domandeChieste) {
+		super();
+		this.provaScritta = provaScritta;
+		this.provaOrale = provaOrale;
+		this.punteggio = punteggio;
+		this.domandeChieste = domandeChieste;
+	}
+
+	public ProvaScritta getProvaScritta() {
+		return provaScritta;
+	}
+
+	public ProvaOrale getProvaOrale() {
+		return provaOrale;
+	}
+
+	public int getPunteggio() {
+		return punteggio;
+	}
+
+	public ArrayList<String> getDomandeChieste() {
+		return domandeChieste;
+	}
+	
+	private int getPunteggioParziale(){
+		return (provaScritta.getPunteggio()+provaOrale.getPunteggio())/2;
+	}
+
+}

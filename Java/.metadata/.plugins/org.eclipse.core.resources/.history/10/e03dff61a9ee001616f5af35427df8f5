@@ -1,0 +1,59 @@
+package eserciziario;
+
+import java.util.ArrayList;
+
+public class SecondoEmicorso {
+	
+	private ProvaScritta provaScrittaPython;
+	
+	private ProvaOrale provaOralePython;
+	
+	private ProvaScritta provaScrittaProlog;
+	
+	private ProvaOrale provaOraleProlog;
+	
+	private Studente studente;
+	
+	private ArrayList<String> domandeChieste;
+
+	public SecondoEmicorso(ProvaScritta provaScrittaPython, ProvaOrale provaOralePython,
+			ProvaScritta provaScrittaProlog, ProvaOrale provaOraleProlog, Studente studente,
+			ArrayList<String> domandeChieste) {
+		super();
+		this.provaScrittaPython = provaScrittaPython;
+		this.provaOralePython = provaOralePython;
+		this.provaScrittaProlog = provaScrittaProlog;
+		this.provaOraleProlog = provaOraleProlog;
+		this.studente = studente;
+		this.domandeChieste = domandeChieste;
+	}
+
+	public ProvaScritta getProvaScrittaPython() {
+		return provaScrittaPython;
+	}
+
+	public ProvaOrale getProvaOralePython() {
+		return provaOralePython;
+	}
+
+	public ProvaScritta getProvaScrittaProlog() {
+		return provaScrittaProlog;
+	}
+
+	public ProvaOrale getProvaOraleProlog() {
+		return provaOraleProlog;
+	}
+
+	public Studente getStudente() {
+		return studente;
+	}
+
+	public ArrayList<String> getDomandeChieste() {
+		return domandeChieste;
+	}
+	
+	private String getDatiStudente(){
+		return studente.toString();
+	}
+
+}

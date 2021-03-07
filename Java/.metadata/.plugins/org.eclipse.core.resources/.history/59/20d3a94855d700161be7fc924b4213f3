@@ -1,0 +1,10 @@
+package lmp.uniroma2;
+
+public class Esame {
+	
+	private String nome;
+
+	private Date dataSuperamento;
+	
+	private int votoEsame;  //espresso in 30esimi
+}

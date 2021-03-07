@@ -1,0 +1,30 @@
+package esame_lmp;
+
+import java.util.ArrayList;
+
+public class Concessionario {
+	
+	private ArrayList<Automobile> listaAutomobili;
+
+	public Concessionario(ArrayList<Automobile> listaAutomobili) {
+		super();
+		this.listaAutomobili = listaAutomobili;
+	}
+
+	public ArrayList<Automobile> getListaAutomobili() {
+		return listaAutomobili;
+	}
+
+	public void setListaAutomobili(ArrayList<Automobile> listaAutomobili) {
+		this.listaAutomobili = listaAutomobili;
+	}
+	
+	public void getStatoAutomobile(){
+		for(Automobile a: listaAutomobili){
+			
+		}
+	}
+	
+	
+
+}

@@ -1,0 +1,19 @@
+package eserciziario;
+
+public class SecondoEmicorso {
+	
+	private ProvaScritta provaScrittaPython;
+	
+	private ProvaOrale provaOralePython;
+	
+	private ProvaScritta provaScrittaProlog;
+	
+	private ProvaOrale provaOraleProlog;
+	
+	private Studente studente;
+	
+	private ArrayList<String> domandeChieste;
+	
+	
+
+}

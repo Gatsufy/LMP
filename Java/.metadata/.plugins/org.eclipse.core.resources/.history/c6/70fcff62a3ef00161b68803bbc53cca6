@@ -1,0 +1,33 @@
+package eserciziario;
+
+public class SecondoEmicorso {
+	
+	private ProvaScrittaModuloDue provaScritta;
+	
+	private ProvaOraleModuloDue provaOrale;
+	
+	private int coefficienteScritto;
+	
+	private  int coefficienteOrale;
+	
+	private Studente studente;
+	
+	
+
+	public SecondoEmicorso(ProvaScrittaModuloDue provaScritta, ProvaOraleModuloDue provaOrale) {
+		super();
+		this.provaScritta = provaScritta;
+		this.provaOrale = provaOrale;
+	}
+
+	public ProvaScrittaModuloDue getProvaScritta() {
+		return provaScritta;
+	}
+
+	public ProvaOraleModuloDue getProvaOrale() {
+		return provaOrale;
+	}
+	
+	
+
+}

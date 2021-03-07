@@ -1,0 +1,12 @@
+package eserciziario;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+public class EsameCompleto {
+	
+	private Date dataEsame;
+	
+	private ArrayList<Studente> listaStudenti;
+
+}

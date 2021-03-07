@@ -1,0 +1,11 @@
+package eserciziario;
+
+public class LiberoProfessionista extends Person {
+	
+	private String partitaIva;
+	
+	private String professione;
+	
+	
+
+}

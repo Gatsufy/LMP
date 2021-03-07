@@ -1,0 +1,25 @@
+package marco.melchiorri;
+
+import java.util.ArrayList;
+
+public class Runner {
+	
+	public static void main (String[] args){
+	TestScritto scrittoUno=new TestScritto(8,10,4);
+	
+	TestScritto scrittoDue=new TestScritto(1,1,1);
+	
+	ArrayList<Studente> listaStudenti=new ArrayList<>();
+		
+	Studente studenteUno=new Studente("Marco","Melchiorri","0214773",scrittoUno);
+	
+	Studente studenteDue=new Studente("Seia","Bucci","0222459",scrittoDue);
+	
+	listaStudenti.add(studenteUno);
+	
+	listaStudenti.add(studenteDue);
+
+
+}
+	
+}

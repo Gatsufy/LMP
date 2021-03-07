@@ -1,0 +1,7 @@
+package eserciziario;
+
+public class PersonArchive {
+	
+	private Map<String,Persona> map=new HashMap<String,Person>();
+
+}

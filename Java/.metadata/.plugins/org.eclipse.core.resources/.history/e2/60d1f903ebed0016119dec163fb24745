@@ -1,0 +1,31 @@
+package eserciziario;
+
+public class Book {
+	
+	private String nome;
+	
+	private int annoPubblicazione;
+	
+	private int numeroPagine;
+
+	public Book(String nome, int annoPubblicazione) {
+		super();
+		this.nome = nome;
+		this.annoPubblicazione = annoPubblicazione;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public int getAnnoPubblicazione() {
+		return annoPubblicazione;
+	}
+	
+	public int getNumeroPagine(){
+		return numeroPagine;
+	}
+	
+	
+
+}

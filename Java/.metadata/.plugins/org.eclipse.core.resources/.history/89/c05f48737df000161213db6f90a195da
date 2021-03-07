@@ -1,0 +1,31 @@
+package eserciziario;
+
+import java.util.ArrayList;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		ProvaScritta provaUno=new ProvaScritta(10,5,7);
+		
+		ProvaScritta provaDue=new ProvaScritta(10,2,5);
+		
+		Studente s1=new Studente("Marco","Melchiorri","0219773", provaUno);
+		
+		Studente s2=new Studente("Tizio","Random","sdisdh", provaDue);
+		
+		ArrayList<Studente> listaStudenti=new ArrayList<>();
+		
+		listaStudenti.add(s1);
+		
+		listaStudenti.add(s2);
+		
+		Esame esameAnalisi=new Esame(listaStudenti);
+		
+		System.out.println(esameAnalisi.numeroPromossi());
+		
+		System.out.println(esameAnalisi.percentualeBocciati());
+
+	}
+
+}
